@@ -1,0 +1,52 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id = "title">RK Survey Form</h1>
+    <p id = "description">Please complete this survey to share your feedback. Thank you!</p>
+
+    <form method = "POST" id="survey-form">
+      
+      <label for = "name-label" id="name-label">Name:</label>
+      <input required type = "text" id="name" placeholder = "John Doe">
+
+      <label for = "email-label" id="email-label">Email ID:</label>
+      <input required type = "email" id="email" placeholder = "example@email.com">
+
+      <label for = "number-label" id="number-label">Age:</label>
+      <input placeholder = "18" type = "number" id="number" min="3" max="100">
+  
+  <label>What's your current role?</label>
+  <select id = "dropdown">
+    <option value = "Student/Other">Student/Other</option>
+    <option selected value = "Salaried">Salaried</option>
+  </select>
+  
+  <legend>Would you recommend this to others?</legend>
+          <label for="yes-option">Yes</label>
+          <input id="yes-option" type="radio" name="recommend" value = "recommend"/>
+          <label for="no-option">No</label>
+          <input id="no-option" type="radio" name="recommend"value = "recommend"/>
+
+  <legend>Select all the factors that are important for you</legend>
+  <label for="service">Service</label>
+  <input type="checkbox" id="service" name="service" value="service" />
+
+  <label for="cost">Cost</label>
+  <input type="checkbox" id="cost" name="cost" value="cost" />
+
+  <label for="comments">Other Comments?</label>
+  <textarea cols="5" rows="5" name="comments" id="comments"></textarea>
+  
+  <button type="submit" id="submit">Submit</button>
+  </body>
+</html>
+
+** end of index.html **
+
